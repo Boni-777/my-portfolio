@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Bontu Bekele, Software Engineering student and aspiring web developer in Addis Ababa.">
+    <meta name="keywords" content="Bontu Bekele, portfolio, software engineering, web developer, HTML">
+    <meta name="author" content="Bontu Bekele">
     <title>Bontu Bekele | Portfolio</title>
     <link rel="icon" type="image/png" href="images/favicon%20B.png">
 </head>
 <body>
+    <header>
     <h1>Bontu Bekele</h1>
     <img src="images/profile%20picture.png" alt="Portrait of Bontu Bekele smiling" title="Bontu Bekele" width="200" height="200">
    <p>Software Engineer and aspiring web developer.</p>
-   <p>
+   <nav>
     <a href="#about">About</a>
     <a href="#inspire">What inspires Me</a>
     <a href="#skills">Skills</a>
@@ -18,21 +22,25 @@
     <a href="#education">Education</a>
     <a href="#contact">Contact</a>
     <a href="projects.html">All Projects</a>
-   </p>
-   <hr>
-   <h2 id="about">About Me</h2>
+   </nav>
+   </header>
+   <main>
+    <section id="about">
+   <h2>About Me</h2>
    <p>I am a 3<sup>rd</sup> year <strong>Software Engineering</strong> student. I <em>really</em> enjoy building websites, and my current goal is to <mark>become a full-stack web developer</mark>.</p>
    <p>Languages I have used: <b>Python</b>, <b>C++</b>, <b>Java</b>, <b>CSS</b>, <b>JavaScript</b> and <i>little</i> React.</p>
    <p>Fun Fact: I drink 2 litres of H<sub>2</sub>O while coding  everyday and I also enjoy drawing.</p>
-   <hr>
-   <h2 id="inspire">What inspires Me</h2>
+   </section>
+   <aside id="inspire">
+   <h2>What inspires Me</h2>
    <blockquote>
     "The greatest tragedy in life is not death, but life without a purpose." - Myles Munroe
    </blockquote>
    <p>My teacher always says <q>practice beats theory</q>, so I code every day.</p>
    <p>Book I am reading: <cite>Artificial Intelligence: The Last Invention or The End of Invention</cite> by Solomon Kassa</p>
-   <hr>
-   <h2 id="skills">Skills</h2>
+   </aside>
+   <sections id="skills">
+   <h2>Skills</h2>
    <ul>
     <li>Programming Languages
         <ul type="square">
@@ -72,17 +80,24 @@
 <dt>Git and GitHub</dt>
 <dd>Saves versions of my code and shares my projects online.</dd>
 </dl>
-   <hr>
-   <h2 id="projects">Projects</h2>
+</sections>
+<section id="projects">
+   <h2>Projects</h2>
+   <article>
    <h3>Simple Calculator</h3>
    <img src="images/project-calculator.png" alt="Screenshot of the calculator showing 12 + 30 = 42"
                                   width="400" height="250">
    <p>A calculator that adds, subtracts, multiplies and divides.</p>
+   </article>
+   <article>
    <h3>Library Management System</h3>
    <p>A console program for borrowing and returning books.</p>
+   </article>
+   <article>
    <h3>Loan management system</h3>
    <p>A program that manages loan granting organization's system.</p>
-   <p><a href="projects.html">See all my projects &rarr;</a></p>
+   </article>
+   <article>
    <h3>First Program</h3>
    <p>The first thing I wrote in Python was <code>print("Hello, World!")</code>. Later I wrote this loop:</p>
    <pre><code>for i in range(3):
@@ -94,8 +109,11 @@
        cout &lt;&lt; "Hello " &lt;&lt; i &lt;&lt; endl;
    }
    </code></pre>
-   <hr>
-   <h2 id="education">Education</h2>
+  </article>
+  <p><a href="projects.html">See all my projects &rarr;</a></p>
+  </section>
+  <section id="education">
+   <h2>Education</h2>
    <h3>Bsc in Software Engineering</h3>
    <p>Addis Ababa Science and Technology University, 2023 - present</p>
    <table border="1" cellpadding="8" cellspacing="0">
@@ -154,8 +172,9 @@
         </tr>
     </tfoot>
 </table>
-<hr>
-   <h2 id="contact">Contact</h2>
+</section>
+<section id="contact">
+   <h2>Contact</h2>
    <p>Address:<br>Addis Ababa,<br>Ethiopia</p>
    <p>Email: <a href="mailto:bontubekz7@gmail.com">bontubekz7@gmail.com</a></p>
    <p>Phone: <a href="tel:+251922487823">+251922487823</a></p>
@@ -174,5 +193,10 @@
     <area shape="rect" coords="420,40,580,160"
       href="mailto:bontubekz7@gmail.com" alt="Email">
   </map>
+  </section>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2026 Bontu Bekele. All rights reserved.</p>
+</footer>
 </body>
 </html>
