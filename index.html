@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+    <canvas id="logo" width="120" height="120">Bontu Bekele logo</canvas>
     <h1>Bontu Bekele</h1>
     <img src="images/profile%20picture.png" alt="Portrait of Bontu Bekele smiling" title="Bontu Bekele" width="200" height="200">
    <p>Software Engineer and aspiring web developer.</p>
@@ -105,6 +106,10 @@
     <label for="lvl-cpp">C++</label>
     <meter id="lvl-cpp" value="0.6" min="0" max="1">60%</meter>
 </p>
+<h3>Skills Bar Chart</h3>
+<canvas id="skillsChart" width="300" height="150">
+    Bar chart showing my skill levels
+</canvas>
 <h3>My Learning Roadmap</h3>
 <ol type="1">
     <li>HTML structure and content</li>
@@ -322,5 +327,48 @@
     <p>© 2026 Bontu Bekele. All rights reserved.</p>
     <p>Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
 </footer>
+<script>
+    // Draw the logo
+    const logoCanvas = document.getElementById("logo");
+    const logoCtx = logoCanvas.getContext("2d");
+
+    // Blue square background
+    logoCtx.fillStyle = "#1f5fa8";
+    logoCtx.fillRect(0, 0, 120, 120);
+
+    // White circle
+    logoCtx.beginPath();
+    logoCtx.arc(60, 60, 45, 0, 2 * Math.PI);
+    logoCtx.fillStyle = "white";
+    logoCtx.fill();
+
+    // Initials
+    logoCtx.fillStyle = "#1f5fa8";
+    logoCtx.font = "bold 36px Arial";
+    logoCtx.textAlign = "center";
+    logoCtx.textBaseline = "middle";
+    logoCtx.fillText("BB", 60, 62);
+
+    // Draw the skills bar chart
+    const chartCanvas = document.getElementById("skillsChart");
+    const chartCtx = chartCanvas.getContext("2d");
+
+    chartCtx.fillStyle = "#1f5fa8";
+    chartCtx.font = "12px Arial";
+    chartCtx.textAlign = "center";
+    chartCtx.textBaseline = "alphabetic";
+
+    // Bars sit on the baseline at y = 130
+    chartCtx.fillRect(27, 34, 36, 96);  // HTML: 80%
+    chartCtx.fillRect(92, 46, 36, 84);  // Python: 70%
+    chartCtx.fillRect(157, 106, 36, 24); // JavaScript: 20%
+    chartCtx.fillRect(222, 58, 36, 72); // C++: 60%
+
+    // Skill names beneath the bars
+    chartCtx.fillText("HTML", 45, 146);
+    chartCtx.fillText("Python", 110, 146);
+    chartCtx.fillText("JavaScript", 175, 146);
+    chartCtx.fillText("C++", 240, 146);
+</script>
 </body>
 </html>
